@@ -15,7 +15,7 @@ deploy:
   provider: elasticbeanstalk
   region: us-east-2
   app: docker-react
-  env: DockerReact-env"
+  env: DockerReact-env
   bucket_name: elasticbeanstalk-us-east-2-533489334743
   bucket_path: docker-reacts
   on:
@@ -25,7 +25,7 @@ deploy:
 # deploy:
 #   provider: pages
 #   skip_cleanup: true
-#   github_token: 5e1c0a2dfef1beac97e45dc184166589400b5140  # Set in the settings page of your repository, as a secure variable
+#   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
 #   keep_history: true
 #   on:
 #     branch: master
